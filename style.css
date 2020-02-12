@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #eee;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p, a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+}
+
+h1, h2, h3{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.content{
+    position: relative;
+    padding-top: 50px;
+    min-width: 320px;
+    max-width: 1800px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* HEADER */
+
+header{
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1800px;
+    height: 50px;
+    background: #fff;
+    font-size: 22px;
+    color: #888;
+    z-index: 1;
+}
+
+.fa-home{
+    font-size: 22px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+
+
+/* HERO SECTION */
+
+#hero{
+    width: 100%;
+    text-align: right;
+    color: #fff;
+    position: relative;
+}
+
+#hero #info{
+    position: absolute;
+    right: 0;
+    padding: 2vw;
+    border-bottom: 2px dashed #fff;
+}
+
+h1{
+    font-size: 7vw;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 4vw;
+}
+
+#hero img{
+    width: 100%;
+    height: auto;
+}
+
+/* ABOUT SECTION */
+
+#about{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 6vw;
+}
+
+#about img{
+    width: 50%;
+    height: auto;
+    margin: 3vw;
+    border-radius: 50%;
+    border: 2px dashed #E9CDCC;
+}
+
+
+/* TECH SECTION */
+
+#tech{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #E9CDCC;
+    padding-bottom: 8vw;
+}
+
+#tech i{
+    font-size: 90px;
+    color: #fff;
+    padding: 3vw;
+}
+
+#tech > div{
+    padding: 5vw;
+    border-bottom: 2px dashed #fff;
+}
+
+
+
+
+@media (max-width: 899px){
+    nav{
+        display: none;
+    }
+    
+    header:hover nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+    }
+    
+    header:hover nav a{
+        display: block;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 900px){
+    header .fa-bars{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav a{
+        padding: 10px;
+    }
+
+
+    #about{
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-around;
+    }
+    .image{
+        max-width: 600px;
+    }
+    #about img{
+        width: 100%;
+    }
+    .about-info{
+        max-width: 1000px;
+    }
+
+
+    #tech{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    #tech > div{
+        border-bottom: none;
+        border-right: 2px dashed #fff;
+    }
+    #tech > div:last-child{
+        border-right: none;
+    }
+}
+
+@media (min-width: 1300px){
+    p, a{
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 1800px){
+    h1{
+        font-size: 126px;
+    }
+    h2{
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 400px){
+    p, a{
+        font-size: 14px;
+    }
+}
