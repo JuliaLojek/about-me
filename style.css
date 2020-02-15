@@ -135,7 +135,7 @@ h2{
 
 /* FOOTER */
 
-footer p{
+.footer-text{
     display: block;
     color: #888;
     font-size: 12px;
