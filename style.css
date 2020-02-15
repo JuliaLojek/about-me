@@ -14,12 +14,15 @@ a{
 }
 
 p, a{
+    display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-size: 3vw;
+    margin: 15px;
 }
 
 h1, h2, h3{
     font-family: 'IBM Plex Mono', monospace;
+    margin: 15px;
 }
 
 .content{
@@ -127,6 +130,18 @@ h2{
 #tech > div{
     padding: 5vw;
     border-bottom: 2px dashed #fff;
+}
+
+
+/* FOOTER */
+
+footer p{
+    display: block;
+    color: #888;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
 }
 
 
