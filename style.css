@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     background: #eee;
 }
@@ -17,7 +21,6 @@ p, a{
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-size: 3vw;
-    margin: 15px;
 }
 
 h1, h2, h3{
@@ -111,6 +114,10 @@ h2{
     margin: 3vw;
     border-radius: 50%;
     border: 2px dashed #E9CDCC;
+}
+
+#about p{
+    margin: 15px;
 }
 
 
