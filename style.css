@@ -22,7 +22,6 @@ p, a{
 
 h1, h2, h3{
     font-family: 'IBM Plex Mono', monospace;
-    margin: 15px;
 }
 
 .content{
@@ -100,6 +99,10 @@ h2{
     width: 100%;
     text-align: center;
     padding: 6vw;
+}
+
+#about h2{
+    margin: 15px;
 }
 
 #about img{
